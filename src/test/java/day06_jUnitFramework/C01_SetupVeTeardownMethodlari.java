@@ -23,10 +23,9 @@ public class C01_SetupVeTeardownMethodlari {
     WebDriver driver;
 
     public void setup(){
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("user-data-dir=C:/path/to/your/custom/profile");
 
-        driver = new ChromeDriver(options);
+
+        driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().window().maximize();
     }
